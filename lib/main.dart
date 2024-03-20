@@ -7,9 +7,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Hello World Travel Title",
-      home: Center(
-        child: Text('Hello World Travel')
-        )
-    );
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Hello World Travel App", 
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white
+           )),
+          backgroundColor: Colors.deepPurple
+          ),
+      body: Center(
+        child: Text('Hello World Travel',
+        style: TextStyle(
+          fontSize: 26,
+          fontWeight: FontWeight.bold,
+          color: Colors.blue[800]
+         )),
+      )));
   }
 }
